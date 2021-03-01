@@ -19,27 +19,28 @@ const bands = [
         DeeDee: "bass"
       }
     }
-  ];
+];
 
 let main = document.querySelector('.main');
 
-for (let i in bands) {
-  let bandDiv = document.createElement("div");
-  bandDiv.classList.add("band");
+for (let band in bands) {
+    let bandDiv = document.createElement("div");
 
-  let title = document.createElement("h2");
-  title.innerHTML = bands[i].name;
-  bandDiv.appendChild(title);
+    bandDiv.innerText = bands[band].name;
 
-  for (let member in bands[i].instruments) {
-    let instrument = bands[i].instruments[member];
+    let components = bands[band].instruments
 
-    let memberDiv = document.createElement("div");
+    for (let component in components) {
+        let componentDiv = document.createElement("div");
 
-    memberDiv.innerHTML = member + ": " + instrument;
-    
-    bandDiv.appendChild(memberDiv);
-  }
+        componentDiv.classList.add("component");
 
-  main.appendChild(bandDiv);
+        componentDiv.innerText = component + " plays " + components[component];
+
+        bandDiv.appendChild(componentDiv);
+    }
+
+    console.log(bands[band]);
+
+    main.appendChild(bandDiv)
 }
