@@ -270,6 +270,54 @@ we do it using the DOM.
 
 # The DOM
 
+## Practice
+
+Let's see in a console all the different features of a webpage
+available throught he document object.
+
+- `title`
+- `head`
+- `body`
+- `url`
+- `domain`
+- `all`
+
+# The DOM
+
+## Selecting elements
+
+Something very common to do with the DOM is to select elements.  We
+have several ways to do it.
+
+. . .
+
+>- `document.querySelector` return the first occurrence of that CSS selector
+>- `document.querySelectorAll` return all occurrences of that CSS selector
+>- `document.getElementById` return the element with the given id
+>- `document.getElementsByTagName` return all occurrences of that HTML tag
+>- `document.getElementsByClassName` return all occurrences of elements with that class
+
+# The DOM
+
+## Selecting elements
+
+Something very common to do with the DOM is to select elements.  We
+have several ways to do it.
+
+- **`document.querySelector` return the first occurrence of that CSS selector**
+- **`document.querySelectorAll` return all occurrences of that CSS selector**
+- `document.getElementById` return the element with the given id
+- `document.getElementsByTagName` return all occurrences of that HTML tag
+- `document.getElementsByClassName` return all occurrences of elements with that class
+
+# The DOM
+
+A small reminder on CSS Selectors
+
+https://flukeout.github.io/
+
+# The DOM
+
 ## changing inner HTML
 
 . . .
